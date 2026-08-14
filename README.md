@@ -18,7 +18,7 @@ intestinal niches during gastric carcinogenesis, including microbial
 community structure, differential abundance, biomarker identification,
 microbial connectivity, strain-level signatures and clinical associations.
 
-## Repository contents
+## Instructions for use
 
 The scripts are organized according to the corresponding figures in the
 manuscript.
@@ -107,13 +107,25 @@ the Data Availability section of the manuscript.
 The scripts contain references to the required input files and their
 corresponding analysis steps.
 
-## Software requirements
+## System requirements
 
 The analyses were performed using R.
 
 The R scripts use standard R packages for data manipulation, statistical
 analysis and visualization. Required packages are loaded within the
 corresponding scripts.
+
+##  Installation guide
+
+install.packages(c("Rmisc","Seurat","VennDiagram","caret","circlize","coin","compositions",
+"data.table","dplyr","effsize","egg","forcats","ggbeeswarm","ggbreak","ggessentials",
+"ggplot2","ggpubr","ggrepel","ggsci","mclust","openxlsx","pROC","patchwork","pheatmap",
+"purrr","readr","readxl","reshape2","scales","stringr","survival","survminer",
+"tibble","tidyr","tidyverse","timeROC","vegan","yaml"))
+
+if (!requireNamespace("BiocManager", quietly=TRUE)) install.packages("BiocManager")
+BiocManager::install(c("ComplexHeatmap","ggtree","ggtreeExtra","treeio"))
+
 
 ## Reproducibility
 
